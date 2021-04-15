@@ -32,6 +32,7 @@ LOG_BUILD ON)
 
 ExternalProject_Get_Property(eigen3 source_dir)
 SET(eigen_dir ${source_dir})
+message(${eigen_dir})
 
 INCLUDE_DIRECTORIES(${eigen_dir})
 
